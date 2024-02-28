@@ -1,0 +1,525 @@
+@font-face {
+    font-family: a;
+    src: url(./LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: a;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu-btn {
+    display: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #F2F6FD;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: #F2F6FD;
+}
+
+.dashboard {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.sidebar {
+    height: 100%;
+    width: 20%;
+    background-color: #0B60B0;
+    color: #fff;
+    padding: 30px 0;
+    /* position: relative; */
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar h1 {
+    text-align: center;
+}
+
+.sidebar-links {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sidebar-links h3 {
+    font-size: 17px;
+    padding: 10px 30px;
+}
+
+.sidebar-links h3:hover {
+    background-color: #fff;
+    color: #3f3f3f;
+    transition: all 0.2s ease;
+}
+
+.sidebar .social-links {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sidebar .social-links h5 {
+    font-size: 12px;
+    display: flex;
+    gap: 5px;
+}
+
+.dashboard-content {
+    height: 100%;
+    width: 80%;
+    padding: 30px;
+    margin-left: 20%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.nav-left h1 {
+    font-size: 25px;
+    font-family: gilroy;
+    font-weight: 900;
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right i {
+    font-size: 20px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.boxes .box {
+    color: #fff;
+    font-weight: 600;
+    width: 300px;
+    padding: 40px 60px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.boxes .box i {
+    font-size: 20px;
+}
+
+.boxes .box-1 {
+    background-color: #0B60B0;
+}
+
+.boxes .box-1:hover {
+    background-color: #06427a;
+    transition: all 0.3s ease;
+}
+
+.boxes .box-2 {
+    background-color: rgb(3, 152, 3);
+}
+
+.boxes .box-2:hover {
+    background-color: rgb(6, 108, 6);
+    transition: all 0.3s ease;
+}
+
+.boxes .box-3 {
+    background-color: orange;
+}
+
+.boxes .box-3:hover {
+    background-color: rgb(147, 97, 4);
+    transition: all 0.3s ease;
+}
+
+.all-users {
+    width: 100%;
+    margin-top: 40px;
+    height: 300px;
+    overflow: auto;
+}
+
+.user-table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table thead th {
+    background-color: #0B60B0;
+    color: #ddd;
+}
+
+.user-table th,
+.user-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #f2f2f2;
+}
+
+.user-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.user-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Dashboard Page Media Queries  */
+@media screen and (max-width:987px) {
+    #menu-btn {
+        display: initial;
+    }
+
+    .sidebar {
+        transform: translateX(-100%);
+        transition: all 0.3s ease;
+        width: 250px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .dashboard-content {
+        height: 100%;
+        width: 100%;
+        padding: 30px;
+        margin-left: 0%;
+    }
+
+    .all-users {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width:644px) {
+    .boxes .box {
+        width: 100%;
+    }
+
+    .all-users {
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .sidebar h1 {
+        font-size: 25px;
+    }
+
+    .sidebar-links {
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .sidebar-links h3 {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+
+    .sidebar .social-links {
+        flex-direction: column;
+    }
+
+    .sidebar .social-links h5 {
+        font-size: 14px;
+    }
+}
+
+/* Profile Page */
+.profile-content {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-content .left {
+    width: 40%;
+    height: 100%;
+}
+
+.profile-content .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-content .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-content .right input {
+    padding: 5px;
+}
+
+@media screen and (max-width:987px) {
+    .profile-content {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-content .left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .profile-content .left img {
+        height: 300px;
+
+    }
+
+}
+
+
+/* viewAllJobs Css */
+.sub-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.sub-nav h1 {
+    font-size: 20px;
+}
+
+.sub-nav input {
+    margin-top: 6px;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: 1px solid #3f3f3f;
+    outline: none;
+}
+
+.sub-nav .right button {
+    background-color: rgb(8, 98, 183);
+    border: none;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.sub-nav .right button:hover {
+    background-color: rgb(6, 78, 148);
+
+}
+
+.viewAllJobs-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.viewAllJobs-content .card {
+    width: 280px;
+    height: 240px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    padding: 15px;
+}
+
+.viewAllJobs-content .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.viewAllJobs-content .title h3 {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.viewAllJobs-content .card-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 7px;
+}
+
+.viewAllJobs-content .card-text h3 {
+    font-size: 13px;
+}
+
+.viewAllJobs-content .card-text span {
+    color: #3f3f3f;
+}
+
+.viewAllJobs-content .card-image {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.viewAllJobs-content .card-images {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: -2px;
+}
+
+.viewAllJobs-content .image-wrapper {
+    display: flex;
+}
+
+.viewAllJobs-content .card-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.viewAllJobs-content button {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    background-color: #0B60B0;
+    color: #fff;
+}
+
+.viewAllJobs-content button:hover {
+    background-color: #06427a;
+    font-weight: bolder;
+}
+
+/* viewAllJobss Media Queries  */
+@media screen and (max-width:644px) {
+    .sub-nav h1 {
+        font-size: 16px;
+    }
+
+    .sub-nav input {
+        margin-top: 6px;
+        font-size: 10px;
+    }
+
+    .sub-nav .right button {
+        font-size: 10px;
+        padding: 10px 12px;
+
+    }
+
+    .viewAllJobs-content .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .sub-nav h1 {
+        font-size: 14px;
+    }
+
+    .sub-nav input {
+        padding: 4px 8px
+    }
+
+    .sub-nav .right button {
+        font-size: 10px;
+        padding: 10px;
+
+    }
+}
+
+/* createJob Css */
+
+.create-job {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.create-job-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+button[type="submit"] {
+    background-color: #0B60B0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #06427a;
+}

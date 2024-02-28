@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SatisfiedJob</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="dashboard">
+            <div class="sidebar">
+                <h1>SatisfiedJob</h1>
+
+                <div class="sidebar-links">
+                    <a href="/index.html">
+                        <h3><i class="ri-dashboard-line"></i> &nbsp; Dashboard</h3>
+                    </a>
+                    <a href="/profile.html">
+                        <h3><i class="ri-map-pin-user-line"></i> &nbsp; Profile</h3>
+                    </a>
+                    <a href="/viewAllJobs.html">
+                        <h3><i class="ri-basketball-line"></i> &nbsp; View all jobs</h3>
+                    </a>
+                    <a href="/createJob.html">
+                        <h3><i class="ri-edit-2-line"></i> &nbsp; Create Job</h3>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <h5><i class="ri-facebook-circle-fill"></i> Facebook</h5>
+                    <h5><i class="ri-twitter-fill"></i> Twitter</h5>
+                </div>
+            </div>
+            <div class="dashboard-content">
+                <nav>
+                    <div class="nav-left">
+                        <h1>SatisfiedJob</h1>
+                        <h6>28 Jobs Found</h6>
+                    </div>
+                    <div class="nav-right">
+                        <i class="ri-search-line"></i>
+                        <i class="ri-map-pin-user-line"></i>
+                        <i id="menu-btn" class="ri-menu-line"></i>
+                    </div>
+                </nav>
+                <div class="create-job">
+                    <div class="create-job-form">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="job-title">Job Title:</label>
+                                <input type="text" id="job-title" name="job-title">
+                            </div>
+                            <div class="form-group">
+                                <label for="job-description">Job Description:</label>
+                                <textarea id="job-description" name="job-description" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-status">Job Status:</label>
+                                <select id="job-status" name="job-status">
+                                    <option value="junior">Junior</option>
+                                    <option value="senior">Senior</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-timelines">Job Timelines:</label>
+                                <input type="text" id="job-timelines" name="job-timelines">
+                            </div>
+                            <div class="form-group">
+                                <label for="job-salary">Job Salary:</label>
+                                <input type="text" id="job-salary" name="job-salary">
+                            </div>
+                            <button type="submit">Create Job</button>
+                        </form>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sidebar.js"></script>
+</body>
+
+</html>
